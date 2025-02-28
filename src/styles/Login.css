@@ -1,0 +1,98 @@
+/* Container Background */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Login Form Overlay */
+  .login-overlay {
+    background: rgba(0, 20, 50, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 150, 255, 0.8);
+    text-align: center;
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Prevents it from being too wide */
+  }
+  
+  /* SYSTEM MESSAGE */
+  .system-message {
+    color: #00ccff;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ccff;
+    margin-bottom: 15px;
+  }
+  
+  .visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  /* Form Input */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .login-input {
+    padding: 10px;
+    border: 2px solid #00ccff;
+    border-radius: 5px;
+    background: transparent;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+  }
+  
+  .login-input::placeholder {
+    color: #00ccff;
+    opacity: 0.7;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  /* Login Button */
+  .login-button {
+    padding: 10px;
+    background: #00ccff;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0 0 5px white;
+    transition: 0.3s;
+  }
+  
+  .login-button:hover {
+    background: #0088cc;
+    box-shadow: 0 0 10px #00ccff;
+  }
+  
+  .login-button:active {
+    transform: scale(0.95); /* Adds a "click" effect */
+  }
+  .success-message {
+    color: #4CAF50;
+    font-size: 14px;
+    margin: 5px 0;
+    font-weight: bold;
+    text-shadow: 0 0 5px #4CAF50;
+  }
+  

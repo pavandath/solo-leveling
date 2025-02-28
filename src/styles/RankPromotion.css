@@ -1,0 +1,70 @@
+/* RankPromotion.css */
+
+.rank-promotion-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fade-in 0.5s ease-in-out;
+  }
+  
+  .rank-promotion-container {
+    text-align: center;
+    background: linear-gradient(135deg, #1c1c1c, #000000);
+    padding: 40px;
+    border: 2px solid #ff9800;
+    border-radius: 15px;
+    box-shadow: 0 0 30px #ff9800;
+    animation: scale-up 0.5s ease-in-out;
+  }
+  
+  .rank-promotion-text {
+    font-family: "Orbitron", sans-serif;
+    font-size: 36px;
+    color: #ff9800;
+    text-shadow: 0 0 20px #ff9800;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .rank-promotion-subtext {
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .rank-promotion-rank {
+    font-family: "Orbitron", sans-serif;
+    font-size: 48px;
+    color: #00ffea;
+    text-shadow: 0 0 20px #00ffea;
+    text-transform: uppercase;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Scale-up animation */
+  @keyframes scale-up {
+    from {
+      transform: scale(0.8);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
